@@ -1,0 +1,1572 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clear & Caring Communication for Healthcare Professionals</title>
+    <meta
+      name="description"
+      content="A virtual summit for healthcare professionals who want to communicate with more clarity, presence, confidence, and care."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--
+      TODO: Paste the Microsoft Clarity tracking snippet here before publishing.
+      Keep it in the head so Clarity can capture page visits and paywall CTA clicks.
+    -->
+    <style>
+      :root {
+        --navy: #30425e;
+        --mid-blue: #4a6a9c;
+        --steel-blue: #4f85b0;
+        --light-blue: #c5e5ff;
+        --off-white: #f7f6f4;
+        --white: #ffffff;
+        --ink-soft: rgba(48, 66, 94, 0.74);
+        --line: rgba(48, 66, 94, 0.18);
+        --shadow: 0 22px 70px rgba(48, 66, 94, 0.18);
+        --radius: 24px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--navy);
+        background: var(--off-white);
+        font-family: "DM Sans", Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .page {
+        overflow: hidden;
+      }
+
+      .wrap {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--mid-blue);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-weight: 700;
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 860px;
+        color: var(--white);
+        font-size: clamp(3.25rem, 6.6vw, 6.8rem);
+      }
+
+      h2 {
+        max-width: 760px;
+        color: var(--navy);
+        font-size: clamp(2.25rem, 4.5vw, 4.45rem);
+      }
+
+      h3 {
+        color: var(--navy);
+        font-size: clamp(1.8rem, 3vw, 2.75rem);
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .lead {
+        max-width: 720px;
+        color: var(--ink-soft);
+        font-size: clamp(1.05rem, 2vw, 1.28rem);
+      }
+
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        align-items: center;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 52px;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid transparent;
+        border-radius: 999px;
+        padding: 14px 24px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: transform 180ms ease, background 180ms ease, color 180ms ease,
+          border-color 180ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+      }
+
+      .button.primary {
+        background: var(--white);
+        color: var(--navy);
+      }
+
+      .button.secondary {
+        border-color: rgba(255, 255, 255, 0.7);
+        color: var(--white);
+      }
+
+      .button.navy {
+        background: var(--navy);
+        color: var(--white);
+      }
+
+      .button.light {
+        background: var(--light-blue);
+        color: var(--navy);
+      }
+
+      .paywall-note {
+        margin-top: -8px;
+        color: var(--ink-soft);
+        font-size: 0.86rem;
+        font-weight: 700;
+      }
+
+      .ticket.featured .paywall-note {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .hero {
+        position: relative;
+        min-height: min(920px, 92vh);
+        padding: 34px 0 70px;
+        color: var(--white);
+        background:
+          radial-gradient(circle at 78% 24%, rgba(197, 229, 255, 0.5) 0 12%, transparent 28%),
+          linear-gradient(126deg, var(--navy) 0%, var(--navy) 46%, var(--mid-blue) 72%, var(--light-blue) 100%);
+      }
+
+      .hero::after {
+        position: absolute;
+        right: -18vw;
+        bottom: -22vw;
+        width: 58vw;
+        min-width: 520px;
+        aspect-ratio: 1;
+        border: 1px solid rgba(255, 255, 255, 0.38);
+        border-radius: 999px;
+        content: "";
+      }
+
+      .nav {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: clamp(54px, 7vw, 94px);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--white);
+        font-weight: 700;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 48px;
+        height: 48px;
+        place-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.55);
+        border-radius: 999px;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+
+      .brand-mark img {
+        width: 34px;
+        height: 34px;
+        object-fit: contain;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 18px;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+      }
+
+      .hero-grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: minmax(0, 0.98fr) minmax(340px, 0.82fr);
+        gap: clamp(32px, 5vw, 56px);
+        align-items: center;
+      }
+
+      .hero-copy {
+        display: grid;
+        max-width: 920px;
+        gap: 24px;
+      }
+
+      .hero .eyebrow,
+      .hero .lead {
+        color: rgba(255, 255, 255, 0.88);
+      }
+
+      .hero-tagline {
+        max-width: 780px;
+        color: var(--white);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: clamp(2rem, 3.15vw, 3.45rem);
+        font-weight: 700;
+        line-height: 1.02;
+      }
+
+      .hero-tagline span {
+        display: block;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 8px;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 38px;
+        border: 1px solid rgba(255, 255, 255, 0.42);
+        border-radius: 999px;
+        padding: 8px 14px;
+        color: var(--white);
+        font-size: 0.92rem;
+        font-weight: 700;
+      }
+
+      .hero-visual {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.82fr);
+        gap: 14px;
+        align-items: stretch;
+      }
+
+      .hero-photo {
+        width: 100%;
+        height: clamp(320px, 34vw, 420px);
+        min-height: 0;
+        border: 1px solid rgba(255, 255, 255, 0.34);
+        border-radius: 28px;
+        object-fit: cover;
+        object-position: center;
+        box-shadow: 0 24px 70px rgba(22, 31, 45, 0.28);
+      }
+
+      .hero-stack {
+        display: grid;
+        gap: 14px;
+      }
+
+      .hero-stack .hero-photo {
+        min-height: 0;
+        height: calc((clamp(320px, 34vw, 420px) - 14px) / 2);
+      }
+
+      .hero-caption {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+
+      .hero-caption span {
+        border: 1px solid rgba(255, 255, 255, 0.32);
+        border-radius: 999px;
+        padding: 7px 12px;
+        background: rgba(48, 66, 94, 0.34);
+      }
+
+      section {
+        padding: 96px 0;
+      }
+
+      .section-head {
+        display: grid;
+        gap: 20px;
+        margin-bottom: 42px;
+      }
+
+      .intro-band {
+        background: var(--white);
+      }
+
+      .proof-band {
+        padding: 34px 0;
+        background: var(--light-blue);
+      }
+
+      .proof-row {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .proof-item {
+        border-radius: 999px;
+        padding: 14px 18px;
+        background: var(--white);
+        color: var(--navy);
+        font-weight: 800;
+        text-align: center;
+      }
+
+      .logo-band {
+        padding: 44px 0;
+        background: var(--white);
+      }
+
+      .logo-row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        align-items: stretch;
+      }
+
+      .logo-card {
+        display: grid;
+        gap: 14px;
+        align-content: center;
+        min-height: 170px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 22px;
+        background: var(--off-white);
+        text-align: center;
+      }
+
+      .logo-card img {
+        max-width: min(170px, 70%);
+        max-height: 110px;
+        object-fit: contain;
+        margin: 0 auto;
+      }
+
+      .logo-card.wide img {
+        max-width: min(260px, 86%);
+      }
+
+      .logo-card span {
+        color: var(--ink-soft);
+        font-size: 0.86rem;
+        font-weight: 800;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+        gap: 56px;
+        align-items: start;
+      }
+
+      .quote-panel {
+        border-radius: var(--radius);
+        padding: 34px;
+        background: var(--light-blue);
+      }
+
+      .quote-panel p {
+        color: var(--navy);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: clamp(2rem, 4vw, 3.7rem);
+        font-weight: 700;
+        line-height: 1.02;
+      }
+
+      .copy-stack {
+        display: grid;
+        gap: 18px;
+        color: var(--ink-soft);
+        font-size: 1.05rem;
+      }
+
+      .copy-stack strong {
+        color: var(--navy);
+      }
+
+      .moment-list {
+        display: grid;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .moment-list li {
+        border-left: 3px solid var(--mid-blue);
+        padding-left: 14px;
+        color: var(--navy);
+        font-weight: 700;
+      }
+
+      .stock-row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 44px;
+      }
+
+      .stock-card {
+        position: relative;
+        display: grid;
+        min-height: 270px;
+        align-content: end;
+        overflow: hidden;
+        border-radius: var(--radius);
+        padding: 22px;
+        color: var(--white);
+        background:
+          linear-gradient(180deg, rgba(48, 66, 94, 0.08) 0%, rgba(48, 66, 94, 0.9) 100%),
+          linear-gradient(135deg, var(--mid-blue), var(--light-blue));
+        box-shadow: 0 18px 50px rgba(48, 66, 94, 0.14);
+      }
+
+      .stock-card::before {
+        position: absolute;
+        inset: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.34);
+        border-radius: 18px;
+        content: "";
+      }
+
+      .stock-card.team {
+        background:
+          linear-gradient(180deg, rgba(48, 66, 94, 0.04) 0%, rgba(48, 66, 94, 0.9) 100%),
+          radial-gradient(circle at 22% 28%, rgba(255, 255, 255, 0.72) 0 9%, transparent 10%),
+          radial-gradient(circle at 48% 34%, rgba(255, 255, 255, 0.62) 0 8%, transparent 9%),
+          radial-gradient(circle at 72% 27%, rgba(255, 255, 255, 0.54) 0 9%, transparent 10%),
+          linear-gradient(135deg, var(--mid-blue), var(--light-blue));
+      }
+
+      .stock-card.teaching {
+        background:
+          linear-gradient(180deg, rgba(48, 66, 94, 0.04) 0%, rgba(48, 66, 94, 0.9) 100%),
+          linear-gradient(90deg, transparent 18%, rgba(255, 255, 255, 0.38) 19% 21%, transparent 22%),
+          linear-gradient(0deg, transparent 38%, rgba(255, 255, 255, 0.32) 39% 41%, transparent 42%),
+          linear-gradient(135deg, var(--steel-blue), var(--light-blue));
+      }
+
+      .stock-card.conversation {
+        background:
+          linear-gradient(180deg, rgba(48, 66, 94, 0.04) 0%, rgba(48, 66, 94, 0.9) 100%),
+          radial-gradient(circle at 30% 32%, rgba(255, 255, 255, 0.68) 0 12%, transparent 13%),
+          radial-gradient(circle at 70% 36%, rgba(255, 255, 255, 0.58) 0 12%, transparent 13%),
+          linear-gradient(135deg, var(--navy), var(--mid-blue));
+      }
+
+      .stock-card span {
+        position: relative;
+        z-index: 1;
+        width: fit-content;
+        border-radius: 999px;
+        padding: 8px 12px;
+        background: rgba(255, 255, 255, 0.16);
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .stock-card strong {
+        position: relative;
+        z-index: 1;
+        display: block;
+        margin-top: 12px;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 2rem;
+        line-height: 1.05;
+      }
+
+      .stock-card p {
+        position: relative;
+        z-index: 1;
+        margin-top: 8px;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 0.95rem;
+      }
+
+      .audience {
+        background:
+          linear-gradient(180deg, var(--off-white) 0%, var(--white) 100%);
+      }
+
+      .audience-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .audience-chip {
+        min-height: 72px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 16px 18px;
+        background: var(--white);
+        color: var(--navy);
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .pathway {
+        color: var(--white);
+        background:
+          linear-gradient(90deg, rgba(48, 66, 94, 0.95) 0%, rgba(48, 66, 94, 0.92) 48%, rgba(74, 106, 156, 0.96) 100%),
+          var(--navy);
+      }
+
+      .pathway h2,
+      .pathway h3,
+      .pathway .eyebrow,
+      .pathway .lead {
+        color: var(--white);
+      }
+
+      .path-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .path-step {
+        min-height: 300px;
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: var(--radius);
+        padding: 28px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .step-number {
+        display: grid;
+        width: 54px;
+        height: 54px;
+        place-items: center;
+        margin-bottom: 28px;
+        border-radius: 999px;
+        background: var(--white);
+        color: var(--navy);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .path-step p {
+        margin-top: 14px;
+        color: rgba(255, 255, 255, 0.83);
+      }
+
+      .sessions {
+        background: var(--white);
+      }
+
+      .session-list {
+        display: grid;
+        gap: 18px;
+      }
+
+      .session {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+        gap: 26px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 28px;
+        background: var(--off-white);
+      }
+
+      .session-label {
+        display: flex;
+        min-height: 150px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: var(--navy);
+        color: var(--white);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+
+      .session-copy {
+        display: grid;
+        gap: 16px;
+      }
+
+      .session-copy p,
+      .session-copy li {
+        color: var(--ink-soft);
+      }
+
+      .check-list {
+        display: grid;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .check-list li {
+        position: relative;
+        padding-left: 26px;
+      }
+
+      .check-list li::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: var(--mid-blue);
+        content: "✓";
+        font-weight: 800;
+      }
+
+      .speakers {
+        background: var(--off-white);
+      }
+
+      .speaker-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .speaker {
+        display: grid;
+        gap: 20px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 22px;
+        background: var(--white);
+      }
+
+      .speaker-photo {
+        display: block;
+        width: 100%;
+        min-height: 300px;
+        height: 340px;
+        border-radius: calc(var(--radius) - 4px);
+        object-fit: cover;
+        object-position: center;
+        background: var(--light-blue);
+      }
+
+      .speaker-photo.logo-photo {
+        display: grid;
+        min-height: 300px;
+        height: 340px;
+        place-items: center;
+        border-radius: calc(var(--radius) - 4px);
+        background:
+          linear-gradient(135deg, rgba(48, 66, 94, 0.92), rgba(74, 106, 156, 0.86)),
+          var(--navy);
+      }
+
+      .speaker-photo.logo-photo img {
+        width: min(70%, 230px);
+        height: auto;
+        filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.22));
+      }
+
+      .speaker p {
+        color: var(--ink-soft);
+      }
+
+      .speaker-media {
+        display: grid;
+        min-height: 148px;
+        place-items: center;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 18px;
+        background: var(--off-white);
+      }
+
+      .speaker-media img {
+        max-width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+      }
+
+      .speaker-media.book img {
+        max-height: 230px;
+      }
+
+      .speaker-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 2px;
+      }
+
+      .speaker-links a {
+        display: inline-flex;
+        min-height: 38px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 8px 14px;
+        color: var(--navy);
+        font-size: 0.9rem;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .speaker-links a:hover {
+        border-color: var(--mid-blue);
+        background: var(--light-blue);
+      }
+
+      .tickets {
+        background: var(--white);
+      }
+
+      .ticket-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        align-items: stretch;
+      }
+
+      .ticket {
+        display: grid;
+        gap: 22px;
+        grid-template-rows: auto auto minmax(0, 1fr) auto auto;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 34px;
+        background: var(--off-white);
+      }
+
+      .ticket.featured {
+        background: var(--navy);
+        color: var(--white);
+      }
+
+      .ticket.featured h3,
+      .ticket.featured .price,
+      .ticket.featured p,
+      .ticket.featured li {
+        color: var(--white);
+      }
+
+      .ticket-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        align-items: flex-start;
+      }
+
+      .ticket p {
+        color: var(--ink-soft);
+      }
+
+      .price {
+        color: var(--navy);
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 4.2rem;
+        font-weight: 700;
+        line-height: 0.9;
+        white-space: nowrap;
+      }
+
+      .ticket .check-list li {
+        color: var(--ink-soft);
+      }
+
+      .ticket-benefits {
+        display: grid;
+        gap: 18px;
+        align-content: start;
+      }
+
+      .ticket .button {
+        align-self: end;
+      }
+
+      .benefit-group {
+        display: grid;
+        gap: 10px;
+      }
+
+      .benefit-label {
+        color: var(--navy);
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .ticket.featured .benefit-label {
+        color: var(--light-blue);
+      }
+
+      .ticket.featured .check-list li::before {
+        color: var(--light-blue);
+      }
+
+      .faq {
+        background:
+          linear-gradient(180deg, var(--white) 0%, var(--off-white) 100%);
+      }
+
+      .faq-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      details {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 20px 22px;
+        background: var(--white);
+      }
+
+      summary {
+        color: var(--navy);
+        cursor: pointer;
+        font-weight: 800;
+      }
+
+      details p {
+        margin-top: 12px;
+        color: var(--ink-soft);
+      }
+
+      .final-cta {
+        padding: 90px 0;
+        color: var(--white);
+        background:
+          linear-gradient(120deg, var(--navy) 0%, var(--navy) 62%, var(--mid-blue) 100%);
+      }
+
+      .final-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 28px;
+        align-items: center;
+      }
+
+      .final-panel h2,
+      .final-panel p,
+      .final-panel .eyebrow {
+        color: var(--white);
+      }
+
+      footer {
+        padding: 34px 0;
+        background: var(--navy);
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 0.92rem;
+      }
+
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .footer-links a {
+        color: var(--white);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 1180px) {
+        .hero {
+          min-height: auto;
+        }
+
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-copy,
+        h1,
+        .hero-tagline,
+        .hero .lead {
+          max-width: 840px;
+        }
+
+        .hero-visual {
+          max-width: 760px;
+        }
+
+        .hero-photo {
+          height: clamp(300px, 42vw, 390px);
+        }
+
+        .hero-stack .hero-photo {
+          height: calc((clamp(300px, 42vw, 390px) - 14px) / 2);
+        }
+
+        .logo-row,
+        .stock-row {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .logo-row .logo-card:first-child {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .nav {
+          margin-bottom: 64px;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .hero-grid,
+        .split,
+        .final-panel {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-visual {
+          max-width: 680px;
+        }
+
+        .audience-grid,
+        .path-grid,
+        .speaker-grid,
+        .ticket-grid,
+        .faq-grid,
+        .stock-row,
+        .logo-row {
+          grid-template-columns: 1fr;
+        }
+
+        .session {
+          grid-template-columns: 1fr;
+        }
+
+        .session-label {
+          min-height: 96px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .wrap {
+          width: min(100% - 28px, 1120px);
+        }
+
+        section {
+          padding: 72px 0;
+        }
+
+        .hero {
+          min-height: auto;
+          padding-bottom: 54px;
+        }
+
+        .hero-visual,
+        .proof-row {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-photo,
+        .hero-stack .hero-photo {
+          height: auto;
+          min-height: 320px;
+        }
+
+        .hero-caption {
+          justify-content: flex-start;
+        }
+
+        .brand span:last-child {
+          max-width: 210px;
+          line-height: 1.15;
+        }
+
+        .ticket,
+        .session,
+        .quote-panel {
+          padding: 24px;
+        }
+
+        .button {
+          width: 100%;
+        }
+
+        .ticket-top {
+          display: grid;
+        }
+
+        .price {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero" id="top">
+        <div class="wrap">
+          <nav class="nav" aria-label="Primary">
+            <a class="brand" href="#top" aria-label="Transforming Healthcare Coaching home">
+              <span class="brand-mark"><img src="assets/thc-logo.png" alt="" /></span>
+              <span>Transforming Healthcare Coaching</span>
+            </a>
+            <div class="nav-links" aria-label="Page sections">
+              <a href="#sessions">Sessions</a>
+              <a href="#tickets">Tickets</a>
+              <a href="#faq">FAQ</a>
+            </div>
+          </nav>
+
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">C3 Virtual Summit · Clear Care Communication</p>
+              <h1>Clear & Caring Communication</h1>
+              <p class="hero-tagline">
+                <span>Lead from within.</span>
+                <span>Speak with impact.</span>
+                <span>Navigate conflict with confidence.</span>
+              </p>
+              <p class="lead">
+                A virtual summit for medical students, residents, physicians, leaders, clinicians,
+                and educators who want the conversations that matter to land with clarity and care.
+              </p>
+              <div class="hero-meta" aria-label="Event details">
+                <span class="pill">September 3, 2026</span>
+                <span class="pill">2:00 PM EST</span>
+                <span class="pill">Students · Residents · Physicians · Leaders</span>
+              </div>
+              <div class="button-row">
+                <a class="button primary" data-track="regular_paywall_click" href="#circle-paywall-regular">Regular Ticket · $45</a>
+                <a class="button secondary" data-track="vip_paywall_click" href="#circle-paywall-vip">VIP Ticket · $75</a>
+              </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Summit speakers">
+              <img class="hero-photo" src="assets/salvatore-manzi.jpg" alt="Salvatore Manzi" />
+              <div class="hero-stack">
+                <img class="hero-photo" src="assets/lillian-emlet.png" alt="Lillian Emlet" />
+                <img class="hero-photo" src="assets/lee-sharma.png" alt="R. Lee Sharma" />
+              </div>
+              <div class="hero-caption">
+                <span>Purpose and authenticity</span>
+                <span>Impact and authority</span>
+                <span>SPARC conflict skills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="proof-band" aria-label="Audience fit">
+          <div class="wrap proof-row">
+            <div class="proof-item">Lead from within</div>
+            <div class="proof-item">Speak with impact</div>
+            <div class="proof-item">Navigate conflict with skill</div>
+            <div class="proof-item">7-day replay access</div>
+          </div>
+        </section>
+
+        <section class="logo-band" aria-label="Host and featured work">
+          <div class="wrap logo-row">
+            <div class="logo-card">
+              <img src="assets/thc-logo-large.png" alt="Transforming Healthcare Coaching logo" />
+              <span>Hosted by Transforming Healthcare Coaching</span>
+            </div>
+            <div class="logo-card wide">
+              <img src="assets/clear-and-compelling.png" alt="Clear and Compelling by Salvatore Manzi" />
+              <span>Featuring communication strategy from Salvatore Manzi</span>
+            </div>
+            <div class="logo-card wide">
+              <img src="assets/scalpel-and-sword.png" alt="Scalpel and Sword" />
+              <span>Conflict tools from Dr. R. Lee Sharma</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="intro-band" aria-labelledby="problem-title">
+          <div class="wrap split">
+            <div class="quote-panel">
+              <p>Healthcare communication happens in moments that matter.</p>
+            </div>
+            <div class="copy-stack">
+              <p class="eyebrow">The communication challenge</p>
+              <h2 id="problem-title">The conversations that shape trust are often the ones people avoid.</h2>
+              <p>
+                Every day in healthcare, communication happens in moments that can change how
+                people learn, work, trust, and care for one another.
+              </p>
+              <ul class="moment-list">
+                <li>The team huddle where clarity matters.</li>
+                <li>The teaching moment where feedback needs care.</li>
+                <li>The presentation where your message needs to land.</li>
+                <li>The tension everyone feels but no one has named.</li>
+              </ul>
+              <p>
+                Many healthcare professionals are trained to be clinically, operationally, or
+                technically excellent. Fewer are given practical support for communicating with
+                clarity, care, presence, and confidence under pressure.
+              </p>
+              <p>
+                <strong>This summit is the bridge: three expert-led sessions that help you ground
+                yourself, make your message land, and approach conflict before it goes underground.</strong>
+              </p>
+            </div>
+          </div>
+          <div class="wrap stock-row" aria-label="Approved stock image placeholders">
+            <figure class="stock-card team">
+              <span>Approved stock placeholder</span>
+              <strong>Healthcare team huddle</strong>
+              <p>Use a warm, candid image of interprofessional clinicians communicating together.</p>
+            </figure>
+            <figure class="stock-card teaching">
+              <span>Approved stock placeholder</span>
+              <strong>Teaching or feedback moment</strong>
+              <p>Use an image that includes learners or trainees in a supportive setting.</p>
+            </figure>
+            <figure class="stock-card conversation">
+              <span>Approved stock placeholder</span>
+              <strong>Difficult conversation</strong>
+              <p>Use a calm two-person image that suggests listening, care, and trust.</p>
+            </figure>
+          </div>
+        </section>
+
+        <section class="audience" aria-labelledby="audience-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow">Who this summit is for</p>
+              <h2 id="audience-title">For healthcare professionals at the moments when communication starts to matter most.</h2>
+              <p class="lead">
+                Designed for people building their voice in medicine and healthcare: learners,
+                trainees, physicians, leaders, educators, and clinicians navigating
+                tension, visibility, feedback, and change.
+              </p>
+            </div>
+            <div class="audience-grid">
+              <div class="audience-chip">Medical students</div>
+              <div class="audience-chip">Residents and fellows</div>
+              <div class="audience-chip">Senior trainees</div>
+              <div class="audience-chip">Physicians</div>
+              <div class="audience-chip">Frontline clinicians</div>
+              <div class="audience-chip">Leaders</div>
+              <div class="audience-chip">Faculty and educators</div>
+              <div class="audience-chip">Nurses and APPs</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pathway" aria-labelledby="pathway-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow">The summit pathway</p>
+              <h2 id="pathway-title">Three capacities for conversations that build trust.</h2>
+              <p class="lead">
+                The summit moves from the inside out: purpose, presence, and practical conflict skill.
+              </p>
+            </div>
+            <div class="path-grid">
+              <article class="path-step">
+                <div class="step-number">1</div>
+                <h3>Lead From Within</h3>
+                <p>
+                  Know what anchors you so you can respond with more intention under pressure.
+                </p>
+              </article>
+              <article class="path-step">
+                <div class="step-number">2</div>
+                <h3>Speak With Impact</h3>
+                <p>
+                  Use presence, pacing, voice, story, and authority so your message lands.
+                </p>
+              </article>
+              <article class="path-step">
+                <div class="step-number">3</div>
+                <h3>Navigate Conflict With Skill</h3>
+                <p>
+                  Stay clear, caring, and constructive when tension rises.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="sessions" id="sessions" aria-labelledby="sessions-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow">Session copy</p>
+              <h2 id="sessions-title">Three sessions. Three experts. One essential communication skillset.</h2>
+            </div>
+            <div class="session-list">
+              <article class="session">
+                <div class="session-label">01</div>
+                <div class="session-copy">
+                  <h3>Lead From Within: The Inner Work of Clear Communication</h3>
+                  <p>
+                    Lillian opens with the foundation: purpose, presence, authenticity, values, and
+                    the steadiness needed to communicate well under pressure.
+                  </p>
+                  <ul class="check-list">
+                    <li>Communicate from groundedness instead of urgency.</li>
+                    <li>Clarify how values and purpose shape how you listen, speak, and respond.</li>
+                    <li>Return to clarity when pressure, complexity, or emotion rises.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="session">
+                <div class="session-label">02</div>
+                <div class="session-copy">
+                  <h3>Speak With Presence: Communicating With Impact, Authority, and Trust</h3>
+                  <p>
+                    Salvatore brings the craft of clear and compelling communication: presence,
+                    voice, message, story, and the delivery choices that help words land.
+                  </p>
+                  <ul class="check-list">
+                    <li>Speak with greater presence and authority.</li>
+                    <li>Make your message clearer and more memorable.</li>
+                    <li>Learn delivery methods used with TEDx speakers, entrepreneurs, and CEOs.</li>
+                    <li>Communicate with confidence without losing warmth or authenticity.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="session">
+                <div class="session-label">03</div>
+                <div class="session-copy">
+                  <h3>Navigate Conflict With Skill: Clear and Caring Communication When Tension Rises</h3>
+                  <p>
+                    Lee introduces practical conflict tools, including the SPARC framework, for
+                    approaching disagreement and difficult workplace or training conversations.
+                  </p>
+                  <ul class="check-list">
+                    <li>Recognize patterns of avoidance, defensiveness, or escalation.</li>
+                    <li>Communicate clearly without becoming harsh.</li>
+                    <li>Remain caring without avoiding accountability.</li>
+                    <li>Use shared language for conflict before it becomes a crisis.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="speakers" aria-labelledby="speakers-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow">Meet your summit guides</p>
+              <h2 id="speakers-title">Three perspectives for one essential healthcare skillset.</h2>
+            </div>
+            <div class="speaker-grid">
+              <article class="speaker">
+                <img class="speaker-photo" src="assets/lillian-emlet.png" alt="Lillian Emlet" />
+                <h3>Lillian Liang Emlet, MD MS CHSE CPC ELI-MP</h3>
+                <p>
+                  Lillian is the founder of Transforming Healthcare Coaching, a physician,
+                  simulation educator, and certified professional coach. She helps healthcare
+                  professionals reconnect with clarity, purpose, values, and sustainable ways of
+                  working inside complex systems.
+                </p>
+                <p>
+                  In this summit, Lillian anchors the inner work of clear and caring communication:
+                  how to return to groundedness and speak from purpose, presence, and authenticity.
+                </p>
+                <div class="speaker-links" aria-label="Lillian Emlet links">
+                  <a href="https://www.linkedin.com/in/lillian-liang-emlet-transforming-healthcare-coaching" target="_blank" rel="noopener">LinkedIn</a>
+                  <a href="https://transforminghealthcarecoaching.com" target="_blank" rel="noopener">Website</a>
+                </div>
+              </article>
+              <article class="speaker">
+                <img class="speaker-photo" src="assets/salvatore-manzi.jpg" alt="Salvatore Manzi" />
+                <h3>Salvatore J. Manzi</h3>
+                <div class="speaker-media book">
+                  <img src="assets/clear-and-compelling.png" alt="Clear and Compelling by Salvatore Manzi" />
+                </div>
+                <p>
+                  Salvatore is a communications coach, facilitator, speaker, and author with two
+                  decades of experience helping people translate important ideas into clear,
+                  compelling messages. He has coached TEDx speakers, entrepreneurs, CEOs, and
+                  professionals preparing for high-stakes communication moments.
+                </p>
+                <p>
+                  In this summit, Salvatore helps healthcare professionals strengthen how they show
+                  up when they speak: how to organize a message, use pacing and presence, and
+                  communicate with confidence while staying human. His forthcoming book is
+                  <em>Clear and Compelling</em>.
+                </p>
+                <div class="speaker-links" aria-label="Salvatore Manzi links">
+                  <a href="https://www.linkedin.com/in/salvatorejmanzi" target="_blank" rel="noopener">LinkedIn</a>
+                  <a href="https://www.salvatoremanzi.com/" target="_blank" rel="noopener">Website</a>
+                </div>
+              </article>
+              <article class="speaker">
+                <img class="speaker-photo" src="assets/lee-sharma.png" alt="Lee Sharma" />
+                <h3>R. Lee Sharma, MD</h3>
+                <div class="speaker-media">
+                  <img src="assets/scalpel-and-sword.png" alt="Scalpel and Sword" />
+                </div>
+                <p>
+                  Dr. Lee Sharma is a physician, mediator, conflict analyst, consultant, and host
+                  of the Scalpel and Sword podcast. Her work helps healthcare professionals notice
+                  and address conflict earlier, before it becomes a crisis.
+                </p>
+                <p>
+                  In this summit, Lee brings the conflict lens: how to recognize patterns of
+                  silence, defensiveness, escalation, and misalignment, then use practical language
+                  and the SPARC framework to move toward clarity, accountability, repair, and trust.
+                </p>
+                <div class="speaker-links" aria-label="Lee Sharma links">
+                  <a href="https://www.linkedin.com/in/rajamalliga-sharma-md-ma-6a1b6731/" target="_blank" rel="noopener">LinkedIn</a>
+                  <a href="https://rleesharma.com/" target="_blank" rel="noopener">Website</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="tickets" id="tickets" aria-labelledby="tickets-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow">Reserve your spot</p>
+              <h2 id="tickets-title">Choose the access level that fits how you want to participate.</h2>
+            </div>
+            <div class="ticket-grid">
+              <article class="ticket">
+                <div class="ticket-top">
+                  <div>
+                    <p class="eyebrow">Regular</p>
+                    <h3>Summit Ticket</h3>
+                  </div>
+                  <div class="price">$45</div>
+                </div>
+                <p>For participants who want the live summit experience and one week to revisit the material.</p>
+                <div class="ticket-benefits">
+                  <div class="benefit-group">
+                    <div class="benefit-label">Included</div>
+                    <ul class="check-list">
+                      <li>Live virtual summit access</li>
+                      <li>Three expert-led sessions</li>
+                      <li>7 days of replay access</li>
+                    </ul>
+                  </div>
+                </div>
+                <a class="button navy" data-track="regular_paywall_click" href="#circle-paywall-regular">Choose Regular</a>
+                <p class="paywall-note">Placeholder for Regular Circle paywall link.</p>
+              </article>
+
+              <article class="ticket featured">
+                <div class="ticket-top">
+                  <div>
+                    <p class="eyebrow">VIP</p>
+                    <h3>Deeper Access</h3>
+                  </div>
+                  <div class="price">$75</div>
+                </div>
+                <p>
+                  For participants who want the live summit experience plus deeper access, ongoing
+                  replay access, and bonus support after the event.
+                </p>
+                <div class="ticket-benefits">
+                  <div class="benefit-group">
+                    <div class="benefit-label">VIP Includes</div>
+                    <ul class="check-list">
+                      <li>Live virtual summit access</li>
+                      <li>Three expert-led sessions</li>
+                      <li>7 days of replay access</li>
+                      <li>Exclusive Ask Us Anything session</li>
+                      <li>Gift box mailed to you</li>
+                      <li>
+                        Special discounts on individual coaching, training programs, and speaking
+                        engagements
+                      </li>
+                      <li>Lifetime access to the webinar recording</li>
+                    </ul>
+                  </div>
+                </div>
+                <a class="button primary" data-track="vip_paywall_click" href="#circle-paywall-vip">Choose VIP</a>
+                <p class="paywall-note">Placeholder for VIP Circle paywall link.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+          <div class="wrap">
+            <div class="section-head">
+              <p class="eyebrow">Questions</p>
+              <h2 id="faq-title">FAQ</h2>
+            </div>
+            <div class="faq-grid">
+              <details open>
+                <summary>Is this summit only for physicians?</summary>
+                <p>
+                  No. It is designed for healthcare professionals across roles and stages, including
+                  medical students, residents, fellows, physicians, leaders, clinicians, nurses,
+                  APPs, educators, and healthcare professionals.
+                </p>
+              </details>
+              <details>
+                <summary>Will the summit be practical?</summary>
+                <p>
+                  Yes. Each session offers insight and application, with language, reflection points,
+                  and tools you can apply to clinical, teaching, team, and workplace conversations.
+                </p>
+              </details>
+              <details>
+                <summary>Is this about public speaking?</summary>
+                <p>
+                  Partly, but not only. The summit includes executive presence and communication
+                  impact, but it also focuses on purpose, authenticity, grounded communication, and
+                  practical conflict skills.
+                </p>
+              </details>
+              <details>
+                <summary>Is this relevant if I am not currently in conflict?</summary>
+                <p>
+                  Yes. Conflict skills are most useful before tension becomes a crisis and are useful
+                  in everyday clinical, team, and training moments.
+                </p>
+              </details>
+              <details>
+                <summary>Is CME available?</summary>
+                <p>
+                  CME is not currently listed for this summit. If CME becomes available, this page
+                  will be updated before registration opens.
+                </p>
+              </details>
+              <details>
+                <summary>Will recordings be available?</summary>
+                <p>
+                  Yes. Regular ticket holders receive 7 days of replay access. VIP ticket holders
+                  receive lifetime access to the webinar recording.
+                </p>
+              </details>
+              <details>
+                <summary>Where is the summit hosted?</summary>
+                <p>
+                  The summit will be hosted virtually in Circle. Registration links will connect to
+                  the appropriate Circle Paywall once the Regular and VIP checkout pages are ready.
+                </p>
+              </details>
+              <details>
+                <summary>What is included with VIP?</summary>
+                <p>
+                  VIP includes the live summit ticket, an exclusive Ask Us Anything session, a gift
+                  box mailed to you, special discounts on individual coaching, training programs,
+                  and speaking engagements, plus lifetime access to the webinar recording.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="final-cta" aria-labelledby="final-title">
+          <div class="wrap final-panel">
+            <div class="section-head">
+              <p class="eyebrow">September 3, 2026 · 2:00 PM EST</p>
+              <h2 id="final-title">Strengthen the conversations that shape trust, learning, teamwork, and care.</h2>
+              <p class="lead">
+                Join a virtual summit designed to help healthcare professionals lead from within,
+                speak with impact, and navigate conflict with confidence and care.
+              </p>
+            </div>
+            <div class="button-row">
+              <a class="button primary" data-track="regular_paywall_click" href="#circle-paywall-regular">Regular · $45</a>
+              <a class="button secondary" data-track="vip_paywall_click" href="#circle-paywall-vip">VIP · $75</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="wrap footer-inner">
+          <div>Transforming Healthcare Coaching · Clear & Caring Communication</div>
+          <nav class="footer-links" aria-label="Footer links">
+            <a href="https://transforminghealthcarecoaching.com" target="_blank" rel="noopener">Main Site</a>
+            <a href="https://transforminghealthcarecoaching.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+            <a href="https://transforminghealthcarecoaching.com/terms-of-service/#disclaimer" target="_blank" rel="noopener">Disclaimer</a>
+            <a href="https://transforminghealthcarecoaching.com/terms-of-service/" target="_blank" rel="noopener">Terms & Conditions</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.querySelectorAll("[data-track]").forEach((element) => {
+        element.addEventListener("click", () => {
+          const eventName = element.getAttribute("data-track");
+
+          if (window.clarity && eventName) {
+            window.clarity("event", eventName);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # Clear & Caring Communication Sales Page
 
-Static landing page mockup for the C3 / Clear Care Communication virtual summit.
+Static landing page mockup for the Clear & Caring Communication virtual summit.
 
 ## Cloudflare Pages
 

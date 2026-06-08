@@ -92,6 +92,11 @@ Lee introduces practical conflict tools, including the SPARC framework, for appr
 ## Block 7: Speakers
 Use the three expanded bios from the local HTML page.
 
+Speaker media:
+- Lillian card: Transforming Healthcare Coaching logo
+- Salvatore card: Clear and Compelling image
+- Lee card: Scalpel and Sword image
+
 Lee Sharma LinkedIn: https://www.linkedin.com/in/rajamalliga-sharma-md-ma-6a1b6731/
 
 ## Block 8: Tickets / Paywalls
@@ -107,8 +112,8 @@ Included:
 - 7 days of replay access
 
 VIP bonuses:
-- Exclusive Ask Us Anything session
-- Gift box mailed to them
+- Exclusive 1-hour private Ask Us Anything session with the speakers
+- Physical gift box mailed to the participant
 - Lifetime access to the webinar recording
 - Special discounts on individual coaching, training programs, and speaking engagements
 

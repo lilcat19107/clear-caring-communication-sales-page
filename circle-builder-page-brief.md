@@ -101,7 +101,7 @@ Lee Sharma LinkedIn: https://www.linkedin.com/in/rajamalliga-sharma-md-ma-6a1b67
 - 7 days of replay access
 
 **VIP - $75**
-Everything in Regular:
+Included:
 - Live virtual summit access
 - Three expert-led sessions
 - 7 days of replay access

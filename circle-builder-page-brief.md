@@ -21,7 +21,7 @@
 **Images:** Salvatore Manzi, Lillian Emlet, R. Lee Sharma
 
 **CTA buttons:** Regular Ticket - $45 / VIP Ticket - $75
-**CTA placeholders:** `#circle-paywall-regular` and `#circle-paywall-vip`
+**CTA links:** Regular uses `https://medthrive.circle.so/checkout/clear-and-caring-communication`; VIP uses `#circle-paywall-vip` until the VIP checkout link is ready.
 
 ## Block 2: Audience Fit
 - Lead from within
@@ -121,7 +121,7 @@ Lee Sharma LinkedIn: https://www.linkedin.com/in/rajamalliga-sharma-md-ma-6a1b67
 
 ## Circle Build Notes
 - Use Circle Website Builder blocks for hero, feature chips, image/text sections, speakers, FAQ, and final CTA.
-- Replace `#circle-paywall-regular` with the Regular Circle Paywall checkout link.
+- Regular checkout link is `https://medthrive.circle.so/checkout/clear-and-caring-communication`.
 - Replace `#circle-paywall-vip` with the VIP Circle Paywall checkout link.
 - Use Circle Paywalls for Regular and VIP ticket checkout links.
 - If Circle supports separate paywall benefits, configure Regular and VIP benefit highlights to match the ticket lists above.

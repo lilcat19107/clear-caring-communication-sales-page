@@ -16,7 +16,7 @@ The site is a static `index.html` with local assets in `assets/`.
 
 Replace these placeholder links in `index.html` after Circle Paywalls are created:
 
-- `#circle-paywall-regular` -> Regular ticket Circle Paywall checkout link
+- Regular ticket buttons -> `https://medthrive.circle.so/checkout/clear-and-caring-communication`
 - `#circle-paywall-vip` -> VIP ticket Circle Paywall checkout link
 
 Paste the Microsoft Clarity tracking snippet in the `<head>` where the TODO comment appears.

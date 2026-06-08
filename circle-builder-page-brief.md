@@ -101,13 +101,16 @@ Lee Sharma LinkedIn: https://www.linkedin.com/in/rajamalliga-sharma-md-ma-6a1b67
 - 7 days of replay access
 
 **VIP - $75**
+Everything in Regular:
 - Live virtual summit access
 - Three expert-led sessions
 - 7 days of replay access
+
+VIP bonuses:
 - Exclusive Ask Us Anything session
 - Gift box mailed to them
-- Special discounts on individual coaching, training programs, and speaking engagements
 - Lifetime access to the webinar recording
+- Special discounts on individual coaching, training programs, and speaking engagements
 
 ## Block 9: FAQ
 - Is this summit only for physicians? No. It is designed for healthcare professionals across roles and stages, including medical students, residents, fellows, physicians, leaders, clinicians, nurses, APPs, educators, and healthcare professionals.

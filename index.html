@@ -859,6 +859,36 @@
         color: var(--light-blue);
       }
 
+      .vip-bonus-list {
+        display: grid;
+        gap: 12px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .vip-bonus-list li {
+        border: 1px solid rgba(197, 229, 255, 0.38);
+        border-radius: 10px;
+        background: rgba(197, 229, 255, 0.12);
+        padding: 13px 14px;
+      }
+
+      .vip-bonus-list strong {
+        display: block;
+        color: var(--light-blue);
+        font-size: 0.98rem;
+        line-height: 1.25;
+      }
+
+      .vip-bonus-list span {
+        display: block;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 0.92rem;
+        line-height: 1.45;
+        margin-top: 4px;
+      }
+
       .faq {
         background:
           linear-gradient(180deg, var(--white) 0%, var(--off-white) 100%);
@@ -1421,7 +1451,7 @@
                 <p class="paywall-note">Connects to the Regular Circle checkout.</p>
               </article>
 
-              <article class="ticket featured" id="circle-paywall-vip">
+              <article class="ticket featured vip-ticket" id="circle-paywall-vip">
                 <div class="ticket-top">
                   <div>
                     <p class="eyebrow">VIP</p>
@@ -1435,18 +1465,32 @@
                 </p>
                 <div class="ticket-benefits">
                   <div class="benefit-group">
-                    <div class="benefit-label">VIP Includes</div>
+                    <div class="benefit-label">Everything in Regular</div>
                     <ul class="check-list">
                       <li>Live virtual summit access</li>
                       <li>Three expert-led sessions</li>
                       <li>7 days of replay access</li>
-                      <li>Exclusive Ask Us Anything session</li>
-                      <li>Gift box mailed to you</li>
+                    </ul>
+                  </div>
+                  <div class="benefit-group">
+                    <div class="benefit-label">VIP Bonuses</div>
+                    <ul class="vip-bonus-list">
                       <li>
-                        Special discounts on individual coaching, training programs, and speaking
-                        engagements
+                        <strong>Exclusive Ask Us Anything session</strong>
+                        <span>A separate 1-hour private session with the speakers.</span>
                       </li>
-                      <li>Lifetime access to the webinar recording</li>
+                      <li>
+                        <strong>Gift box mailed to you</strong>
+                        <span>Physical summit gifts from the speaker team.</span>
+                      </li>
+                      <li>
+                        <strong>Lifetime access to the webinar recording</strong>
+                        <span>Return to the summit material whenever you need it.</span>
+                      </li>
+                      <li>
+                        <strong>Special discounts on programs</strong>
+                        <span>Discounts for individual coaching, training programs, and speaking engagements.</span>
+                      </li>
                     </ul>
                   </div>
                 </div>

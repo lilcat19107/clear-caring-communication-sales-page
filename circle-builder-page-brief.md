@@ -55,7 +55,7 @@ This summit is the bridge: three expert-led sessions that help participants grou
 - Difficult conversation: `assets/difficult-conversation.png`
 
 ## Block 4: Who This Is For
-**Headline:** For healthcare professionals at the moments when communication starts to matter most.
+**Headline:** For healthcare professionals.
 
 Audience chips:
 - Medical students

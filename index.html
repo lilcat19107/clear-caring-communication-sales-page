@@ -482,6 +482,24 @@
         border: 1px solid rgba(255, 255, 255, 0.34);
         border-radius: 18px;
         content: "";
+        z-index: 2;
+      }
+
+      .stock-card::after {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(48, 66, 94, 0.04) 0%, rgba(48, 66, 94, 0.86) 100%);
+        content: "";
+        z-index: 1;
+      }
+
+      .stock-card img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
       }
 
       .stock-card.team {
@@ -511,7 +529,7 @@
 
       .stock-card span {
         position: relative;
-        z-index: 1;
+        z-index: 3;
         width: fit-content;
         border-radius: 999px;
         padding: 8px 12px;
@@ -524,7 +542,7 @@
 
       .stock-card strong {
         position: relative;
-        z-index: 1;
+        z-index: 3;
         display: block;
         margin-top: 12px;
         font-family: "Cormorant Garamond", Georgia, serif;
@@ -534,7 +552,7 @@
 
       .stock-card p {
         position: relative;
-        z-index: 1;
+        z-index: 3;
         margin-top: 8px;
         color: rgba(255, 255, 255, 0.86);
         font-size: 0.95rem;
@@ -1216,21 +1234,24 @@
               </p>
             </div>
           </div>
-          <div class="wrap stock-row" aria-label="Approved stock image placeholders">
+          <div class="wrap stock-row" aria-label="Communication in healthcare image examples">
             <figure class="stock-card team">
-              <span>Approved stock placeholder</span>
+              <img src="assets/healthcare-team-huddle.png" alt="Interprofessional healthcare team communicating together" />
+              <span>Team communication</span>
               <strong>Healthcare team huddle</strong>
-              <p>Use a warm, candid image of interprofessional clinicians communicating together.</p>
+              <p>Warm, candid communication across roles and disciplines.</p>
             </figure>
             <figure class="stock-card teaching">
-              <span>Approved stock placeholder</span>
+              <img src="assets/supportive-teaching-moment.png" alt="Supportive clinical teaching conversation in a hospital" />
+              <span>Teaching presence</span>
               <strong>Teaching or feedback moment</strong>
-              <p>Use an image that includes learners or trainees in a supportive setting.</p>
+              <p>Supportive moments where learners and mentors build clarity together.</p>
             </figure>
             <figure class="stock-card conversation">
-              <span>Approved stock placeholder</span>
+              <img src="assets/difficult-conversation.png" alt="Two healthcare professionals navigating a difficult conversation" />
+              <span>Conflict skill</span>
               <strong>Difficult conversation</strong>
-              <p>Use a calm two-person image that suggests listening, care, and trust.</p>
+              <p>Clear, caring communication when tension or uncertainty rises.</p>
             </figure>
           </div>
         </section>

@@ -49,10 +49,10 @@ Many healthcare professionals are trained to be clinically, operationally, or te
 
 This summit is the bridge: three expert-led sessions that help participants ground themselves, make their message land, and approach conflict before it goes underground.
 
-## Block 3B: Approved Stock Image Placeholders
-- Healthcare team huddle: warm, candid image of interprofessional clinicians communicating together
-- Teaching or feedback moment: image that includes learners or trainees in a supportive setting
-- Difficult conversation: calm two-person image that suggests listening, care, and trust
+## Block 3B: Approved Communication Images
+- Healthcare team huddle: `assets/healthcare-team-huddle.png`
+- Teaching or feedback moment: `assets/supportive-teaching-moment.png`
+- Difficult conversation: `assets/difficult-conversation.png`
 
 ## Block 4: Who This Is For
 **Headline:** For healthcare professionals at the moments when communication starts to matter most.

@@ -12,12 +12,13 @@ Recommended deployment settings:
 
 The site is a static `index.html` with local assets in `assets/`.
 
-## Final Launch Replacements
+## Circle Checkout
 
-Replace these placeholder links in `index.html` after Circle Paywalls are created:
+All registration buttons link to the single $45 Circle checkout:
 
-- Regular ticket buttons -> `https://medthrive.circle.so/checkout/clear-and-caring-communication`
-- `#circle-paywall-vip` -> VIP ticket Circle Paywall checkout link
+- `https://medthrive.circle.so/checkout/clear-and-caring-communication`
+
+The ticket includes live summit access, three expert-led sessions, and 7 days of replay access.
 
 Paste the Microsoft Clarity tracking snippet in the `<head>` where the TODO comment appears.
 
@@ -26,7 +27,6 @@ Paste the Microsoft Clarity tracking snippet in the `<head>` where the TODO comm
 The CTA buttons already include click-tracking hooks:
 
 - `regular_paywall_click`
-- `vip_paywall_click`
 
 When the Microsoft Clarity snippet is added, these custom events will fire on paywall button clicks.
 

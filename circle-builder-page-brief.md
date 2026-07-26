@@ -7,9 +7,7 @@
 
 **Event:** September 3, 2026 at 2:00 PM EST
 
-**Primary CTA:** Regular Ticket - $45
-
-**Secondary CTA:** VIP Ticket - $75
+**Primary CTA:** Reserve Your Spot - $45
 
 ## Block 1: Hero
 **Headline:** Clear & Caring Communication
@@ -20,8 +18,8 @@
 
 **Images:** Salvatore Manzi, Lillian Emlet, R. Lee Sharma
 
-**CTA buttons:** Regular Ticket - $45 / VIP Ticket - $75
-**CTA links:** Regular uses `https://medthrive.circle.so/checkout/clear-and-caring-communication`; VIP uses `#circle-paywall-vip` until the VIP checkout link is ready.
+**CTA button:** Reserve Your Spot - $45
+**CTA link:** `https://medthrive.circle.so/checkout/clear-and-caring-communication`
 
 ## Block 2: Audience Fit
 - Lead from within
@@ -100,22 +98,10 @@ Speaker media:
 Lee Sharma LinkedIn: https://www.linkedin.com/in/rajamalliga-sharma-md-ma-6a1b6731/
 
 ## Block 8: Tickets / Paywalls
-**Regular - $45**
+**Summit Ticket - $45**
 - Live virtual summit access
 - Three expert-led sessions
 - 7 days of replay access
-
-**VIP - $75**
-Included:
-- Live virtual summit access
-- Three expert-led sessions
-- 7 days of replay access
-
-VIP bonuses:
-- Exclusive 1-hour private Ask Us Anything session with the speakers
-- Physical gift box mailed to the participant
-- Lifetime access to the webinar recording
-- Special discounts on individual coaching, training programs, and speaking engagements
 
 ## Block 9: FAQ
 - Is this summit only for physicians? No. It is designed for healthcare professionals across roles and stages, including medical students, residents, fellows, physicians, leaders, clinicians, nurses, APPs, educators, and healthcare professionals.
@@ -123,15 +109,11 @@ VIP bonuses:
 - Is this about public speaking? Partly, but not only. The summit includes executive presence and communication impact, plus purpose, authenticity, grounded communication, and practical conflict skills.
 - Is this relevant if I am not currently in conflict? Yes. Conflict skills are most useful before tension becomes a crisis.
 - Is CME available? CME is not currently listed for this summit. If CME becomes available, update the page before registration opens.
-- Will recordings be available? Regular ticket holders receive 7 days of replay access. VIP ticket holders receive lifetime access to the webinar recording.
+- Will recordings be available? Yes. The $45 summit ticket includes 7 days of replay access.
 - Where is the summit hosted? The summit will be hosted virtually in Circle.
-- What is included with VIP? VIP includes the live summit ticket, an exclusive Ask Us Anything session, a gift box mailed to participants, special discounts on individual coaching, training programs, and speaking engagements, plus lifetime access to the webinar recording.
 
 ## Circle Build Notes
 - Use Circle Website Builder blocks for hero, feature chips, image/text sections, speakers, FAQ, and final CTA.
-- Regular checkout link is `https://medthrive.circle.so/checkout/clear-and-caring-communication`.
-- Replace `#circle-paywall-vip` with the VIP Circle Paywall checkout link.
-- Use Circle Paywalls for Regular and VIP ticket checkout links.
-- If Circle supports separate paywall benefits, configure Regular and VIP benefit highlights to match the ticket lists above.
-- If Circle supports custom redirects, send purchasers to the appropriate summit/event space after checkout.
-- If Circle cannot collect gift-box mailing details directly in checkout, add a post-purchase form for VIP purchasers.
+- The single $45 checkout link is `https://medthrive.circle.so/checkout/clear-and-caring-communication`.
+- Configure the Circle Paywall benefits to match the ticket list above.
+- If Circle supports custom redirects, send purchasers to the summit or event space after checkout.

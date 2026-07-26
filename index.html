@@ -159,10 +159,6 @@
         font-weight: 700;
       }
 
-      .ticket.featured .paywall-note {
-        color: rgba(255, 255, 255, 0.78);
-      }
-
       .hero {
         position: relative;
         min-height: min(920px, 92vh);
@@ -797,9 +793,8 @@
 
       .ticket-grid {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 22px;
-        align-items: stretch;
+        width: min(100%, 720px);
+        margin: 0 auto;
       }
 
       .ticket {
@@ -810,19 +805,6 @@
         border-radius: var(--radius);
         padding: 34px;
         background: var(--off-white);
-      }
-
-      .ticket.featured {
-        background: var(--navy);
-        color: var(--white);
-        scroll-margin-top: 28px;
-      }
-
-      .ticket.featured h3,
-      .ticket.featured .price,
-      .ticket.featured p,
-      .ticket.featured li {
-        color: var(--white);
       }
 
       .ticket-top {
@@ -870,50 +852,6 @@
         font-weight: 900;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-      }
-
-      .ticket.featured .benefit-label {
-        color: var(--light-blue);
-      }
-
-      .ticket.featured .check-list li::before {
-        color: var(--light-blue);
-      }
-
-      .ticket.featured .vip-included-list li {
-        color: var(--white);
-        font-size: 1rem;
-        line-height: 1.45;
-      }
-
-      .vip-bonus-list {
-        display: grid;
-        gap: 12px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      .vip-bonus-list li {
-        border: 1px solid rgba(197, 229, 255, 0.38);
-        border-radius: 10px;
-        background: rgba(197, 229, 255, 0.12);
-        padding: 13px 14px;
-      }
-
-      .vip-bonus-list strong {
-        display: block;
-        color: var(--light-blue);
-        font-size: 0.98rem;
-        line-height: 1.25;
-      }
-
-      .vip-bonus-list span {
-        display: block;
-        color: rgba(255, 255, 255, 0.86);
-        font-size: 0.92rem;
-        line-height: 1.45;
-        margin-top: 4px;
       }
 
       .faq {
@@ -1160,8 +1098,7 @@
                 <span class="pill">Students · Residents · Physicians · Leaders</span>
               </div>
               <div class="button-row">
-                <a class="button primary" data-track="regular_paywall_click" href="https://medthrive.circle.so/checkout/clear-and-caring-communication">Regular Ticket · $45</a>
-                <a class="button secondary" data-track="vip_paywall_click" href="#circle-paywall-vip">VIP Ticket · $75</a>
+                <a class="button primary" data-track="regular_paywall_click" href="https://medthrive.circle.so/checkout/clear-and-caring-communication">Reserve Your Spot · $45</a>
               </div>
             </div>
 
@@ -1452,13 +1389,13 @@
           <div class="wrap">
             <div class="section-head">
               <p class="eyebrow">Reserve your spot</p>
-              <h2 id="tickets-title">Choose the access level that fits how you want to participate.</h2>
+              <h2 id="tickets-title">One ticket. Live access plus 7 days of recordings.</h2>
             </div>
             <div class="ticket-grid">
               <article class="ticket">
                 <div class="ticket-top">
                   <div>
-                    <p class="eyebrow">Regular</p>
+                    <p class="eyebrow">One ticket</p>
                     <h3>Summit Ticket</h3>
                   </div>
                   <div class="price">$45</div>
@@ -1474,55 +1411,8 @@
                     </ul>
                   </div>
                 </div>
-                <a class="button navy" data-track="regular_paywall_click" href="https://medthrive.circle.so/checkout/clear-and-caring-communication">Choose Regular</a>
-                <p class="paywall-note">Connects to the Regular Circle checkout.</p>
-              </article>
-
-              <article class="ticket featured vip-ticket" id="circle-paywall-vip">
-                <div class="ticket-top">
-                  <div>
-                    <p class="eyebrow">VIP</p>
-                    <h3>VIP Ticket</h3>
-                  </div>
-                  <div class="price">$75</div>
-                </div>
-                <p>
-                  For participants who want the live summit experience, the core sessions, and the
-                  VIP bonuses for deeper support after the event.
-                </p>
-                <div class="ticket-benefits">
-                  <div class="benefit-group">
-                    <div class="benefit-label">Included</div>
-                    <ul class="check-list vip-included-list">
-                      <li>Live virtual summit access</li>
-                      <li>Three expert-led sessions</li>
-                      <li>7 days of replay access</li>
-                    </ul>
-                  </div>
-                  <div class="benefit-group">
-                    <div class="benefit-label">VIP Bonuses</div>
-                    <ul class="vip-bonus-list">
-                      <li>
-                        <strong>Exclusive Ask Us Anything session</strong>
-                        <span>A separate 1-hour private Ask Us Anything session with the speakers.</span>
-                      </li>
-                      <li>
-                        <strong>Gift box mailed to you</strong>
-                        <span>A physical gift box mailed to your address.</span>
-                      </li>
-                      <li>
-                        <strong>Lifetime access to the webinar recording</strong>
-                        <span>Return to the summit material whenever you need it.</span>
-                      </li>
-                      <li>
-                        <strong>Special discounts on programs</strong>
-                        <span>Discounts for individual coaching, training programs, and speaking engagements.</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <a class="button primary" data-track="vip_paywall_click" href="#circle-paywall-vip">Choose VIP</a>
-                <p class="paywall-note">VIP Circle checkout link coming soon.</p>
+                <a class="button navy" data-track="regular_paywall_click" href="https://medthrive.circle.so/checkout/clear-and-caring-communication">Reserve Your Spot</a>
+                <p class="paywall-note">Secure checkout through Circle.</p>
               </article>
             </div>
           </div>
@@ -1575,23 +1465,14 @@
               <details>
                 <summary>Will recordings be available?</summary>
                 <p>
-                  Yes. Regular ticket holders receive 7 days of replay access. VIP ticket holders
-                  receive lifetime access to the webinar recording.
+                  Yes. Your $45 summit ticket includes 7 days of replay access.
                 </p>
               </details>
               <details>
                 <summary>Where is the summit hosted?</summary>
                 <p>
-                  The summit will be hosted virtually in Circle. Registration links will connect to
-                  the appropriate Circle Paywall once the Regular and VIP checkout pages are ready.
-                </p>
-              </details>
-              <details>
-                <summary>What is included with VIP?</summary>
-                <p>
-                  VIP includes the live summit ticket, an exclusive Ask Us Anything session, a gift
-                  box mailed to you, special discounts on individual coaching, training programs,
-                  and speaking engagements, plus lifetime access to the webinar recording.
+                  The summit will be hosted virtually in Circle. Registration is completed through
+                  the secure Circle checkout linked on this page.
                 </p>
               </details>
             </div>
@@ -1609,8 +1490,7 @@
               </p>
             </div>
             <div class="button-row">
-              <a class="button primary" data-track="regular_paywall_click" href="https://medthrive.circle.so/checkout/clear-and-caring-communication">Regular · $45</a>
-              <a class="button secondary" data-track="vip_paywall_click" href="#circle-paywall-vip">VIP · $75</a>
+              <a class="button primary" data-track="regular_paywall_click" href="https://medthrive.circle.so/checkout/clear-and-caring-communication">Reserve Your Spot · $45</a>
             </div>
           </div>
         </section>

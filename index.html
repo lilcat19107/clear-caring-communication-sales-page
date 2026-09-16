@@ -1063,8 +1063,17 @@
         }
       }
     </style>
+    <link rel="stylesheet" href="analytics.css">
   </head>
   <body>
+    <section class="analytics-consent" data-analytics-consent aria-labelledby="analytics-consent-title" hidden>
+      <h2 id="analytics-consent-title">Optional website analytics</h2>
+      <p>May we use Google Analytics to understand visits and improve this page? Your choice does not affect your application or registration. We do not send your form answers to Google Analytics. <a href="https://transforminghealthcarecoaching.com/privacy-policy/">Privacy policy</a></p>
+      <div class="analytics-consent-actions">
+        <button type="button" data-analytics-choice="granted">Accept analytics</button>
+        <button type="button" data-analytics-choice="denied">Decline analytics</button>
+      </div>
+    </section>
     <div class="page">
       <header class="hero" id="top">
         <div class="wrap">
@@ -1519,5 +1528,9 @@
         });
       });
     </script>
+
+
+    <button class="analytics-settings" type="button" data-analytics-settings>Analytics preferences</button>
+    <script src="analytics.js" data-program="communication_summit"></script>
   </body>
 </html>

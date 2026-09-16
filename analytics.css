@@ -1,0 +1,10 @@
+/* Scoped optional analytics controls. */
+.analytics-consent[hidden] { display: none !important; }
+.analytics-consent { box-sizing: border-box; margin: 1rem auto; padding: 1.25rem; max-width: 70rem; background: #f8f4ed; color: #172c40; border: 2px solid #172c40; border-radius: .5rem; font: 1rem/1.5 system-ui, sans-serif; }
+.analytics-consent h2 { margin: 0 0 .5rem; color: #172c40; font: 700 1.2rem/1.4 system-ui, sans-serif; }
+.analytics-consent p { margin: 0 0 1rem; color: #172c40; }
+.analytics-consent a { color: #172c40; text-decoration: underline; }
+.analytics-consent-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.analytics-consent button, .analytics-settings { appearance: none; padding: .65rem 1rem; min-height: 44px; border: 2px solid #172c40; border-radius: .25rem; background: #fff; color: #172c40; font: 600 1rem/1.4 system-ui, sans-serif; cursor: pointer; }
+.analytics-settings { display: block; margin: 1rem auto; }
+.analytics-consent button:focus-visible, .analytics-consent a:focus-visible, .analytics-settings:focus-visible { outline: 3px solid #172c40; outline-offset: 3px; box-shadow: 0 0 0 6px #fff; }
